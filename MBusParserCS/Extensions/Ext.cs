@@ -93,17 +93,17 @@ namespace MBusParserCS.Extensions
             }
         }
 
-        public static Int64 BCDToInt64(this IEnumerable<Byte> data)
+        public static UInt64 BCDToUIt64(this IEnumerable<Byte> data)
         {
             if (data != null && data.Any())
             {
-                Int64 val = 0;
+                UInt64 val = 0;
                 Byte[] dataBytes = data.ToArray();
 
                 for (Int32 i = data.Count(); i > 0; i--)
                 {
-                    val = (val * 10) + ((dataBytes[i - 1] >> 4) & 0xF);
-                    val = (val * 10) + (dataBytes[i - 1] & 0xF);
+                    val = (val * 10) + (UInt64)((dataBytes[i - 1] >> 4) & 0xF);
+                    val = (val * 10) + (UInt64)(dataBytes[i - 1] & 0xF);
                 }
 
                 return val;

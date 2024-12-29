@@ -43,7 +43,7 @@ namespace MBusParserCS
                 result.Error = "Header identification number is null";
                 return result;
             }
-            headerResult.IdentificationNumber = (UInt32)parserMessage.Datagram.Header.IdentificationNumber.BCDToInt64();
+            headerResult.IdentificationNumber = (UInt32)parserMessage.Datagram.Header.IdentificationNumber.BCDToUIt64();
             if (parserMessage.Datagram.Header.Manufacturer == null)
             {
                 result.Error = "Header manufacturer is null";

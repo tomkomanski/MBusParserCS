@@ -439,7 +439,7 @@ namespace MBusParserCS.Calculators
                     }
                     else
                     {
-                        valueDataRecordCalculatorMessage.SetValue(data.BCDToInt64());
+                        valueDataRecordCalculatorMessage.SetValue(data.BCDToUIt64());
                     }
                     break;
 
@@ -450,7 +450,7 @@ namespace MBusParserCS.Calculators
                     }
                     else
                     {
-                        valueDataRecordCalculatorMessage.SetValue(data.BCDToInt64());
+                        valueDataRecordCalculatorMessage.SetValue(data.BCDToUIt64());
                     }
                     break;
 
@@ -461,7 +461,7 @@ namespace MBusParserCS.Calculators
                     }
                     else
                     {
-                        valueDataRecordCalculatorMessage.SetValue(data.BCDToInt64());
+                        valueDataRecordCalculatorMessage.SetValue(data.BCDToUIt64());
                     }
                     break;
 
@@ -472,7 +472,7 @@ namespace MBusParserCS.Calculators
                     }
                     else
                     {
-                        valueDataRecordCalculatorMessage.SetValue(data.BCDToInt64());
+                        valueDataRecordCalculatorMessage.SetValue(data.BCDToUIt64());
                     }
                     break;
 
@@ -494,7 +494,7 @@ namespace MBusParserCS.Calculators
                     }
                     else
                     {
-                        valueDataRecordCalculatorMessage.SetValue(data.BCDToInt64());
+                        valueDataRecordCalculatorMessage.SetValue(data.BCDToUIt64());
                     }
                     break;
 

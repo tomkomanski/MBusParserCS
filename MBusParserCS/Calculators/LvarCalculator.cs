@@ -55,11 +55,11 @@ namespace MBusParserCS.Calculators
             }
             else if (lvarDataTypeAndLength.DataType == LvarDataType.PositiveBCDnumber)
             {
-                lvar.NumericValue = valueBytes.BCDToInt64();
+                lvar.NumericValue = valueBytes.BCDToUIt64();
             }
             else if (lvarDataTypeAndLength.DataType == LvarDataType.NegativeBCDnumber)
             {
-                lvar.NumericValue = valueBytes.BCDToInt64() * - 1 ;
+                lvar.NumericValue = (Int64)valueBytes.BCDToUIt64() * - 1;
             }
             else if (lvarDataTypeAndLength.DataType == LvarDataType.BinaryNumber)
             {

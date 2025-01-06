@@ -164,7 +164,7 @@ namespace MBusParserCS.FrameParsers
 
             List<DataRecord> dataRecords = new();
 
-            if (data.Count >= 2F && data.ElementAt(0) == 0x2F && data.ElementAt(1) == 0x2F)
+            if (data.Count >= 2 && data.ElementAt(0) == 0x2F && data.ElementAt(1) == 0x2F)
             {
                 information.DecryptionStatus = DecryptionStatus.Decrypted;
 
